@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drashti Joshi Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0b1120;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #5b8cff;
+  --line: #1f2937;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior:smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #111827, #0b1120);
+  color: var(--text);
+}
+
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(11,17,32,0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  text-align:center;
+  padding:15px;
+  z-index:10;
+}
+
+nav a {
+  color: var(--muted);
+  margin: 0 14px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover { color: var(--accent); }
+
+header {
+  text-align:center;
+  padding:60px 20px;
+}
+
+.profile-image {
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid var(--accent);
+  margin-bottom:15px;
+}
+
+header h1 {
+  font-size:42px;
+}
+
+header p {
+  color: var(--muted);
+  margin-top:10px;
+}
+
+/* SECTIONS */
+section {
+  max-width:900px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+h2 {
+  font-size:13px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color: var(--muted);
+  margin-bottom:20px;
+}
+
+.card {
+  background: rgba(17,24,39,0.6);
+  border: 1px solid var(--line);
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:20px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.card h3 {
+  font-size:18px;
+}
+
+.card p {
+  color: var(--muted);
+  margin-top:8px;
+}
+
+.card span {
+  color: var(--accent);
+  font-size:13px;
+}
+
+.contact a {
+  display:block;
+  color: var(--muted);
+  text-decoration:none;
+  margin-bottom:8px;
+}
+
+.contact a:hover {
+  color: var(--accent);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <img src="profile.jpg" class="profile-image">
+  <h1>Drashti Joshi</h1>
+  <p>Incoming MS CS Student · Cybersecurity · Cloud Security · App Development</p>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+I am an incoming MS in Computer Science student in Canada with strong interest in cybersecurity, cloud security, IT infrastructure, and app development. I have hands-on experience as an IT Analyst Co-op at Kubota Materials Canada.
+</p>
+
+<p style="margin-top:10px;">
+Previously, I worked as a Flutter Developer Intern and Teaching Assistant for Java, which strengthened my programming, mobile development, and problem-solving skills.
+</p>
+
+<p style="margin-top:10px;">
+I am also deeply interested in mobile application development using Flutter and Dart, and I enjoy building user-friendly and efficient applications alongside my cybersecurity work.
+</p>
+
+<p style="margin-top:10px;">
+My goal is to grow into roles that combine cloud, security, and app development.
+</p>
+</div>
+
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+
+<div class="card">
+<h3>IT Analyst Co-op</h3>
+<span>Kubota Materials Canada · Jan 2026 - Present</span>
+<p>Supported IT operations, access control, troubleshooting, system maintenance, ticket handling, and asset management.</p>
+</div>
+
+<div class="card">
+<h3>Flutter Developer Intern</h3>
+<span>OpenEyes Software · Dec 2023 - Jul 2024</span>
+<p>Developed mobile applications using Flutter, Dart, PHP, Laravel, APIs, Azure, SQL Server, and IIS.</p>
+</div>
+
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="card">
+<h3>Technical Skills</h3>
+<p>
+Operating Systems: Windows, macOS<br>
+Productivity Suites: Office 365, Google Suite<br>
+ITSM Tools: Jira, osTicket<br>
+Asset Management<br>
+Computer Hardware Support<br>
+Process Improvement & Documentation<br>
+Client Communication & Support<br>
+Network & System Troubleshooting
+</p>
+</div>
+
+<div class="card">
+<h3>Programming Languages</h3>
+<p>Java · Python · PHP · Dart · Flutter · Laravel · C · C++ · SQL</p>
+</div>
+
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Web Application Security Testing</h3>
+<span>Burp Suite · Nmap · SQLmap</span>
+<p>Identified vulnerabilities through penetration testing.</p>
+</div>
+
+<div class="card">
+<h3>Enterprise Network Simulation</h3>
+<span>Cisco Packet Tracer</span>
+<p>Designed secure network architecture with segmentation and routing.</p>
+</div>
+
+<div class="card">
+<h3>Task Management Mobile App</h3>
+<span>Flutter · Dart</span>
+<p>Built a mobile application focused on UI design and task organization.</p>
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+
+<div class="card">
+<h3>Master of Science in Computer Science</h3>
+<span>Lakehead University · Thunder Bay, ON (Incoming)</span>
+</div>
+
+<div class="card">
+<h3>Postgraduate Certificate in Cybersecurity</h3>
+<span>Georgian College · Barrie, ON</span>
+</div>
+
+<div class="card">
+<h3>Bachelor of Computer Applications</h3>
+<span>Dharmsinh Desai University · Nadiad, Gujarat</span>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="card contact">
+<a href="mailto:Joshidrashti0106@gmail.com">Email: Joshidrashti0106@gmail.com</a>
+<a href="https://www.linkedin.com/in/drashti-joshi-128005294/">LinkedIn Profile</a>
+</div>
+
+</section>
+
+</body>
+</html>
